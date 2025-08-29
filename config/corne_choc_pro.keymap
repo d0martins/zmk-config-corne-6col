@@ -29,13 +29,7 @@
 #define EXTRA 3
 
 / {
-    chosen {
-        zmk,physical-layout = &default_layout;
-    };
-};
-
-/ {
-    // Activate EXTRA layer by pressing raise and lower
+    // Activate EXTRA layer by pressing NUMBER and SYMBOL
     conditional_layers {
         compatible = "zmk,conditional-layers";
         adjust_layer {
@@ -95,7 +89,7 @@
         extra_layer {
             display-name = "EXTRA";
             bindings = <
-                &kp space &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &kp SPC &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
                                      &trans &trans &trans               &trans &trans &trans       
