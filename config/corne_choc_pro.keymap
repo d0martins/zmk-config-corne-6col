@@ -25,7 +25,7 @@
 
 #define BASE 0
 #define NUMBER 1
-#define SYMBOL 2
+#define NAV 2
 #define EXTRA 3
 
 / {
