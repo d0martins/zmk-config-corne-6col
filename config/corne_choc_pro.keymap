@@ -47,13 +47,13 @@
             // _______________________________________________________________________________________________________________________________________________     
             // |   ESC   |    Q    |    W    |    E    |    R    |    T    |    PP   | |   NEXT  |    Y    |    U    |    I    |    O    |     P   |    '    |
             // |   TAB   |    A    |    S    |    D    |    F    |    G    |   none  | |  R ALT  |    H    |    J    |    K    |    L    |     ;   |   BSPC  |
-            // |w_caps sh|    Z    |    X    |    C    |    V    |    B    |                     |    N    |    M    |    ,    |    .    |     /   |   CTRL  |
+            // |w_caps sh|    Z    |    X    |    C    |    V    |    B    |                     |    N    |    M    |    ,    |    .    |     /   |w_caps sh|
             //                               |   GUI   |   CTRL  | LWR RET |                     | RSE SPC |   RSE   |   ALT   |
             bindings = <
             // |---------|---------|---------|---------|---------|---------|---------| |---------|---------|---------|---------|---------|---------|---------|
                 &kp ESC    &kp Q     &kp W     &kp E     &kp R     &kp T     &kp C_PP    &kp C_NEXT &kp Y    &kp U     &kp I     &kp O     &kp P     &kp SQT
                 &kp TAB   &kp A     &kp S     &kp D     &kp F     &kp G     &none       &kp RALT  &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp BSPC
-                &caps LSHFT 0 &kp Z &kp X     &kp C     &kp V     &kp B                           &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp LCTRL
+                &caps LSHFT 0 &kp Z &kp X     &kp C     &kp V     &kp B                           &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &caps LSHFT 0
                                               &kp LGUI  &kp LCTRL &lt 1 RET                       &lt 2 SPC &mo 2     &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN       &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
