@@ -79,9 +79,9 @@
             display-name = "NAV";
             // _______________________________________________________________________________________________________________________________________________
             // |         |    1    |    2    |    3    |    4    |    5    |         | |         |    6    |    7    |    8    |    9    |    0    |         |
-            // |  F11 |  INS  |  SCRL_UP  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | F12  |     | BT2 | BT3 | BT4 | BT5   |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |      |
-            // |      | F1  | RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |      |
+            // |   F11   |   INS   | SCRL_UP |         | K_CMENU |         |         | |         |  6  |  7  |  8  |  9  |  0  | BSPC |
+            // |   F12   |SCRL_LEFT|SCRL_DOWN|SCRL_RIGHT|        |  CAPS   |                     | RALT  | LFT | DWN |  UP | RGT |     |      |
+            // |         |   F1    |    F2   |    F3   |    F4   |   F5    |                     |       |     |     |     |     |     |      |
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
             bindings = <
                 &kp F11   &kp INS    &msc SCRL_UP    &trans   &kp K_CMENU &trans      &trans &trans  &kp PG_UP   &kp HOME  &kp UP    &kp END    &none   &trans
