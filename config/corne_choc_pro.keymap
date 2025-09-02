@@ -21,6 +21,15 @@
                 quick-tap-ms = <0>;
                 bindings = <&kp>, <&caps_word>;
         };
+        // Hold-Tap for number (tap) and F-key (hold)
+        ht_nf: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
+        };
     };
 };
 
@@ -76,8 +85,8 @@
             //                               |         |         |         |                     |         |         |         |
             bindings = <
             // |---------|---------|---------|---------|---------|---------|---------| |---------|---------|---------|---------|---------|---------|---------|
-                &trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &trans      &trans    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp PIPE
-                &kp GRAVE &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &trans      &trans    &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &trans
+                &trans    &ht_nf F1 N1 &ht_nf F2 N2 &ht_nf F3 N3 &ht_nf F4 N4 &ht_nf F5 N5 &trans &trans    &ht_nf F6 N6 &ht_nf F7 N7 &ht_nf F8 N8 &ht_nf F9 N9 &ht_nf F10 N0 &ht_nf F11 PIPE
+                &kp GRAVE &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &trans      &trans    &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &ht_nf F12 BSPC
                 &trans    &kp EQUAL &kp MINUS &kp KP_PLUS &kp LBRC &kp RBRC                       &kp LBKT  &kp RBKT  &trans    &trans    &kp BSLH  &trans
                                               &trans    &trans    &trans                          &trans    &trans    &trans
             >;
